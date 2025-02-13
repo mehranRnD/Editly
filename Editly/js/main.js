@@ -13,7 +13,7 @@
         // Automatically hide the entire preloader after the animation completes
         setTimeout(function () {
           $("#preloder").fadeOut("slow");
-        }, 1000); // 3 seconds total display before fading out
+        }, 500); // 3 seconds total display before fading out
     });
     
 
