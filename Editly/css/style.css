@@ -2114,6 +2114,11 @@ ol {
     line-height: 40px;
   }
 
+  .hero__item {
+    height: 1 !important;
+    padding-bottom: 1rem;
+}
+
   .grid-sizer {
     width: 100%;
   }
