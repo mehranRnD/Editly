@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -237,7 +240,61 @@
         </div>
     </section>
     <!-- Portfolio Section End -->
-
+<!-- Add to Cart Section Begin -->
+<section class="add-to-cart spad set-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <div class="order-now">
+              <span>Order Now</span>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h2>Select Our Service</h2>
+          </div>
+          <p>Choose from our range of video editing services and select your preferred deadline.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="add-to-cart__form">
+            <label for="service-select">Service:</label>
+            <select id="service-select" class="form-control">
+              <option value="">Select a Service</option>
+              <option value="trimming">Trimming - $40</option>
+              <option value="cutting">Cutting - $50</option>
+              <option value="editing">Editing - $60</option>
+              <option value="layover">Layover - $70</option>
+              <option value="screening">Screening - $80</option>
+              <option value="reels">Reels - $90</option>
+              <option value="ytshorts">YouTube Shorts - $100</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="add-to-cart__form">
+            <label for="deadline-select">Deadline:</label>
+            <select id="deadline-select" class="form-control">
+              <option value="">Select a Deadline</option>
+              <option value="1 day">1 Day</option>
+              <option value="3 days">3 Days</option>
+              <option value="5 days">5 Days</option>
+              <option value="1 week">1 Week</option>
+              <option value="2 weeks">2 Weeks</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <button onclick="addToCart()" class="primary-btn">Add to Cart</button>
+          <div id="alertBox" class="alert alert-top d-none" role="alert">Your selection will appear here.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Add to Cart Section End -->
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container">
@@ -313,6 +370,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>    <script src="js/mixitup.min.js"></script>

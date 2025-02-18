@@ -1760,6 +1760,173 @@ ol {
 .contact__form form textarea:focus {
   border-color: #e1e1e1;
 }
+/*---------------------
+  Add to Cart
+-----------------------*/
+.add-to-cart {
+  background: #100028;
+  padding-top: 100px;
+  padding-bottom: 100px;
+   color: #ffffff; /* Ensure text color is visible */
+}
+
+.add-to-cart .section-title {
+   margin-bottom: 50px;
+}
+
+.add-to-cart__form {
+   margin-bottom: 30px;
+}
+
+.add-to-cart__form label {
+   display: block;
+   margin-bottom: 10px;
+   font-size: 16px;
+   font-weight: 700;
+}
+
+.add-to-cart__form select {
+   width: 100%;
+   height: 50px;
+   padding: 0 15px;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+   color: #ffffff; /* Ensure text is visible */
+   font-size: 16px;
+   font-weight: 300;
+   -webkit-appearance: none; /* Remove default appearance */
+   -moz-appearance: none; /* Remove default appearance */
+   appearance: none; /* Remove default appearance */
+   background-repeat: no-repeat;
+   background-position: right 15px center;
+   cursor: pointer;
+}
+
+.add-to-cart__form select:focus {
+   border-color: #e1e1e1;
+   outline: none; /* Remove default focus outline */
+}
+
+.add-to-cart button {
+   display: inline-block;
+   font-size: 15px;
+   font-family: "Play", sans-serif;
+   font-weight: 700;
+   padding: 14px 32px 12px;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   position: relative;
+   z-index: 1;
+   background: #00bfe7;
+   border: none;
+   transition: background-color 0.3s ease;
+}
+
+.add-to-cart button:hover {
+   background: #00a8d8;
+}
+
+.alert-top {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  z-index: 9999;
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.alert-top.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Ensure it's visible */
+}
+
+.alert-top.error {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Darker red text color for contrast */
+  border: 1px solid #c355cd; /* Red border */
+}
+
+.alert-top.success {
+  background-color: #d4edda; /* Light green background */
+  color: #155724; /* Darker green text color for contrast */
+  border: 1px solid #3e6cba; /* Corrected hex color */
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+.order-now {
+  display: flex; /* Align items side by side */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Space between text and icon */
+}
+
+.order-now i.fa-cart-shopping {
+  font-size: 24px; /* Increase icon size */
+  color: #ffffff; /* Optional: Set icon color */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+   .add-to-cart {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .add-to-cart .section-title {
+      margin-bottom: 30px;
+   }
+
+   .add-to-cart__form select {
+      height: 40px;
+      padding: 0 10px;
+      font-size: 14px;
+   }
+
+   .add-to-cart button {
+      font-size: 14px;
+      padding: 10px 20px 8px;
+   }
+}
+
+@media (max-width: 480px) {
+   .add-to-cart {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   .add-to-cart .section-title {
+      margin-bottom: 20px;
+   }
+
+   .add-to-cart__form select {
+      height: 30px;
+      padding: 0 8px;
+      font-size: 12px;
+   }
+
+   .add-to-cart button {
+      font-size: 12px;
+      padding: 8px 16px 6px;
+   }
+}
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
